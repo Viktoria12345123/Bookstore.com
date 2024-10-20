@@ -1,0 +1,190 @@
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-image: url('');
+    background-color: #000000;
+    background-size: cover;
+    padding-top: 6em;
+    margin-top: 3em;
+}
+
+.background-banner {
+    width: 100%;
+    padding: 0 1em;
+    background-size: cover;
+
+}
+
+
+.details {
+    background-color: #ffd700;
+    /* Gold base color */
+    color: #a86e01;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://img.freepik.com/free-photo/abstract-solid-shining-yellow-gradient-studio-wall-room-background_1258-82661.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1729296000&semt=ais_hybrid');
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6), 0 0 40px rgba(255, 215, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.details:hover {
+    transform: scale(1.05);
+}
+
+
+.details::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 0.8;
+    transform: skewX(-20deg);
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+
+.details:hover::before {
+    left: 100%;
+}
+
+
+.reccomended {
+    display: flex;
+    flex-direction: column;
+}
+
+.header h2 {
+    color: rgb(70, 54, 1);
+    background-image: url('https://img.freepik.com/free-photo/abstract-solid-shining-yellow-gradient-studio-wall-room-background_1258-82661.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1729296000&semt=ais_hybrid');
+    position: absolute;
+   max-width: 800px;
+    top: 4rem;
+    left: 4rem;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 3px;
+    z-index: 2;
+    border-radius: 30px;
+}
+
+.header h2 i:first-child {
+    transform: scaleX(-1);
+
+}
+
+
+.scrolling-container {
+    width: 100%;
+    overflow: hidden;
+    /* Hide scrollbar */
+    position: relative;
+}
+
+
+.container-recc {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    animation: scroll-left 60s linear infinite;
+
+}
+
+
+
+.reccomended div img {
+    width: 300px;
+    /* Set a fixed width */
+    aspect-ratio: 1/1.5;
+    /* Maintain aspect ratio */
+    /* Keep it a square */
+    margin-bottom: 0.5em;
+    /* Space between image and button */
+}
+
+.reccomended {
+    padding: 1em;
+    background-image: url('https://media.istockphoto.com/id/1410726013/vector/abstract-black-stage-scene-with-spotlight-and-lighting-effect-background-you-can-use-for.jpg?s=612x612&w=0&k=20&c=yzOUujWxo5lZo38ms-B5pEV6e9OL35VtFPFWKK-tNz4=');
+    background-color: white;
+}
+
+.reccomended .details {
+    scale: 0.7;
+}
+
+.reccomended div img {
+    margin-left: 1em;
+}
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(20%);
+        /* Start position */
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* End position based on total width */
+    }
+}
+
+@keyframes color-change {
+    0% {
+        background-color: #3e98ff;
+    }
+
+    50% {
+
+        background-color: #2f6ef7;
+    }
+
+    100% {
+
+        background-color: #004ffa;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+    .reccomended div img {
+        width: 120px;
+    }
+
+    .reccomended div {
+        width: auto;
+    }
+
+    .book-item img {
+        background-size: cover;
+    }
+
+    .header h2 {
+
+       max-width: 800px;
+        top: 15.5rem;
+        left: 1.5rem;
+        font-size: 2rem;
+       
+        
+    }
+
+
+}

@@ -1,0 +1,29 @@
+.footer {
+
+    background-color: #bb9460;
+}
+
+.footer .contacts {
+    text-align: center;
+    padding: 1em 0 0 0;
+    color: #885718;
+}
+
+ .footer-bottom p {
+    text-align: center;
+    padding-bottom: 0.5em;
+    font-size: 12px;
+ }
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.social-media-icons a {
+    background-color: rgb(170, 119, 9);
+    padding: 1em;
+    border-radius: 50%;
+    color: antiquewhite;
+}
