@@ -16,7 +16,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    top: 5em;
+    left: 0;
+    width: 100%;
+    height: 0.3%;
+    background-color:rgb(255, 136, 0);
+    z-index: 1;
 }
 
 
@@ -36,7 +48,7 @@ body {
 
 
 
-ul {
+.buttons {
     display: flex;
     gap: 0.1rem;
     padding: 0;
@@ -46,7 +58,7 @@ ul {
     margin-right: 1em;
 }
 
-ul li {
+.buttons li {
  margin: 4px;
     list-style: none;
     padding: 0.5rem;
@@ -56,7 +68,7 @@ ul li {
     transform: scale(1.2);
 }
 
-ul li a {
+.buttons li a {
     color: rgb(255, 255, 255);
     font-family: "Rubik Dirt", system-ui;
     font-weight: 400;
@@ -68,7 +80,7 @@ ul li a {
     text-decoration: none;
 }
 
-ul li::after {
+.buttons li::after {
     content: "";
     position: absolute;
     top: 0;
@@ -81,7 +93,7 @@ ul li::after {
     border-radius: 0% 30% 0% 30%;
 }
 
-ul li:hover {
+.buttons li:hover {
     transform: scale(1.3);
 }
 
@@ -128,7 +140,7 @@ ul li:hover {
 
 @media (max-width: 750px) {
 
-    ul {
+    .buttons {
         display: block;
         padding: 0;
         margin: 0;
@@ -144,7 +156,7 @@ ul li:hover {
         
     }
 
-    ul li {
+    .buttons li {
         list-style: none;
         background-color: rgb(255, 136, 0);
         padding: 0.5rem;
@@ -156,7 +168,7 @@ ul li:hover {
         font-size: 0.9rem;
     }
 
-    ul li a {
+    .buttons li a {
         display: block;
         font-size: 0.8rem;
         padding: 0.5em;
@@ -164,7 +176,7 @@ ul li:hover {
 
     }
 
-    ul li::after {
+    .buttons li::after {
         content: "";
         position: absolute;
         top: 0;

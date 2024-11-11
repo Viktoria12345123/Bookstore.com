@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
+    padding: 1em;
     background-image: url('');
     background-color: #000000;
     background-size: cover;
-    padding-top: 6em;
+    padding-top: 3.5em;
     margin-top: 3em;
 }
 
@@ -71,7 +71,7 @@
     background-image: url('https://img.freepik.com/free-photo/abstract-solid-shining-yellow-gradient-studio-wall-room-background_1258-82661.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1729296000&semt=ais_hybrid');
     position: absolute;
    max-width: 800px;
-    top: 4rem;
+    top:4rem;
     left: 4rem;
     text-align: center;
     font-size: 3em;
