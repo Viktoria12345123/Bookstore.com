@@ -13,12 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+<script src="navigation.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="nav-container">
+    <!-- Logo -->
+    <nav class="nav-container-header">
         <div class="content">
             <div class="container">
                 <div class="brand"> <!-- Flex container for logo and buttons -->
@@ -27,15 +31,64 @@
                     </div>
                     <h2>Sweetopia</h2>
                 </div>
-                <ul class="buttons">
-                    <li><a href="#Home"><span class="nav-text">Home</span></a></li>
-                    <li><a href="#Wishlist"><span class="nav-text">Wishlist</span></a></li>
-                    <li><a href="#cart"><span class="nav-text">Cart</span></a></li>
-                    <li><a href="/login-form.html"><span class="nav-text">Account</span></a></li>
-                </ul>
             </div>
         </div>
     </nav>
+
+     <!-- Navigation -->
+     <nav class="nav-container">
+       
+        <nav class="nav-container">
+            <div class="navigation">
+                <ul class="nav-ul-element">
+                    <li class="active">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span class="text">Search</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                            <span class="text">Cart</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </span>
+                            <span class="text">Wishlist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <span class="text">Account</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+
+            </div>
+        </nav>
+
+    </div>
+</nav>
     
 
     <!-- Front-Banner -->
@@ -43,9 +96,6 @@
         <h2><i class=" fa-brands fa-pagelines "></i> 2024 Award's winners<i class="fa-brands fa-pagelines"></i>
         </h2>
     </div>
-
-    
-
     <section class="banner">
 
         <div class="background-banner">
@@ -122,27 +172,14 @@
     </section>
 
   <!-- category-choice -->
-  <section>
-    <div class="container">
-        <ul class="category-list">
-            <li class="category-item"><i class="fa-solid fa-square-root-variable"></i>
-            <h3 class="category-name">SCIENCE</h3></li>
-            <li class="category-item"><i class="fa-solid fa-pepper-hot"></i>
-                <h3 class="category-name">ROMANCE</h3></li>
-            <li class="category-item"><i class="fa-solid fa-earth-americas"></i>
-                <h3 class="category-name">GEOGRAPHY</h3></li>
-            <li class="category-item"><i class="fa-solid fa-baby"></i>
-                <h3 class="category-name">CHILDREN</h3></li>
-            <li class="category-item"><i class="fa-solid fa-utensils"></i>
-                <h3 class="category-name">COOKBOOKS</h3></li>
-            <li class="category-item"><i class="fa-solid fa-user-ninja"></i>
-                <h3>THRILLER</h3></li>
-                <li class="category-item"><i class="fa-solid fa-dragon"></i>
-                    <h3>FANTASY</h3></li>
-           
-        </ul>
-    </div>
-</section>
+  <div class="add-section">
+   <div class="wrapper">
+</div>
+
+
+    
+  
+  </div>
 
     <!-- Dashboard -->
     <div class="book-store">
@@ -220,12 +257,11 @@
     </div>
 
     <!--Footer-->
-
     <footer>
         <div class="footer">
 
             <div class="contacts">
-                <h4>Contacts us</h4>
+                <h4>Contact us</h4>
             </div>
 
             <div class="social-media-icons">

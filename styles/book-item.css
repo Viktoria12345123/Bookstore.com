@@ -1,19 +1,18 @@
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     margin: 0;
-    padding:  0;
+    padding: 0;
 }
 
 .book-store {
     display: flex;
-    flex-direction: row; 
-    gap: 1em; 
+    flex-direction: row;
+    gap: 1em;
     position: relative;
     flex-wrap: wrap;
     padding: 2em;
-   /* background-image: url('https://www.shutterstock.com/image-vector/library-bookcases-background-interior-bookshop-600nw-2455897043.jpg'); */
+    /* background-image: url('https://www.shutterstock.com/image-vector/library-bookcases-background-interior-bookshop-600nw-2455897043.jpg'); */
     z-index: -100;
 }
 
@@ -22,12 +21,58 @@ body {
 
 
 .book-item {
-    display: flex; 
+    display: flex;
     flex: 1 1 49%;
     position: relative;
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
+
+}
+
+.add-section {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5em;
+    position: relative; 
+}
+
+.add-section::after {
+    content: "HUGE DISCOUNTS";
+    padding: 0.5em 1em; 
+    max-width: 200px;
+    background-color: #d32e2e;
+    color: rgb(255, 203, 60); 
+    font-weight: bold; 
+    font-size: 1em; 
+    border-radius: 1px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    position: absolute;
+    left: 1; 
+    z-index: 1; 
+    animation: discount-shuffle 2s infinite alternate ;
+}
+
+@keyframes discount-shuffle {
+    0% {
+        scale: 1.1;
+    }
+
+    100% {
+        transform: translateX(-5%) rotate(-5deg);
+    }
+}
+
+
+.wrapper {
+    margin: 1em;
+    background-color: #eee;
+    background-image: url('https://insights.bookbub.com/wp-content/uploads/2016/06/Stunning-design-examples-inspire-your-book-advertising.png');
+    flex: 1 1 30%;
+    height: 300px;
+    border: 5px solid rgb(192, 149, 6);
+    background-size: cover;
+    
 
 }
 
@@ -37,7 +82,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     z-index: -1;
     filter: brightness(70%);
 }
@@ -45,20 +90,20 @@ body {
 .book-cover img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    display: block; 
-}   
+    object-fit: cover;
+    display: block;
+}
 
 
 
 .book-item::before {
     content: "";
-    position: absolute;  
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-   opacity: 0.2;
+    opacity: 0.2;
     background-color: #000000fb;
 }
 
@@ -68,8 +113,8 @@ body {
     height: 200px;
     background-size: cover;
     position: relative;
-    overflow: hidden; 
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -81,8 +126,8 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0.3;
-    pointer-events: none; 
-    animation: holographic-glow 2s infinite alternate; 
+    pointer-events: none;
+    animation: holographic-glow 2s infinite alternate;
 }
 
 
@@ -90,6 +135,7 @@ body {
     0% {
         opacity: 0.1;
     }
+
     100% {
         opacity: 0.5;
     }
@@ -97,14 +143,14 @@ body {
 
 .book-info {
     padding: 20px;
-    flex: 1; 
+    flex: 1;
 }
 
 
 .book-title {
     position: relative;
     font-size: 2em;
-    color: #ffffff; 
+    color: #ffffff;
     margin: 0;
 }
 
@@ -112,7 +158,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     font-style: italic;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     position: relative;
 }
 
@@ -120,12 +166,12 @@ body {
 .buy-button {
     background-color: #ec37c5;
     color: #000;
-    border: none; 
+    border: none;
     border-radius: 5px;
     padding: 10px 15px;
-    cursor: pointer; 
+    cursor: pointer;
     transition: background-color 0.3s, transform 0.3s ease-in-out;
-    position: relative; 
+    position: relative;
 }
 
 .buy-button:hover {
@@ -141,68 +187,77 @@ body {
 
     .book-cover {
         width: 150px;
-        height: 200px; 
-        background-size: cover; 
+        height: 200px;
+        background-size: cover;
         margin: 1em;
         position: relative;
-        overflow: hidden; 
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5); /* Glow effect */
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
+        /* Glow effect */
     }
+}
+
+@media(min-width: 950px) {
+    .book-item {
+        width: calc(50% - 10px);
+    }
+}
+
+.coin {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #ffd700, #ffcc00, #e6ac00, #c68c00, #ffcc00);
+    background-size: 400% 400%;
+    animation: holographic-gold 5s ease infinite;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.3),
+        inset 0 0 30px rgba(0, 0, 0, 0.4);
+
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -2.7em;
+    right: -2.7em;
+    scale: 0.37;
+}
+
+
+@keyframes holographic-gold {
+    0% {
+        background-position: 0% 0%;
     }
 
-    @media(min-width: 950px) {
-        .book-item {
-            width: calc(50% - 10px);
-        }
+    50% {
+        background-position: 100% 100%;
     }
 
-    .coin {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        
-        background: linear-gradient(135deg, #ffd700, #ffcc00, #e6ac00, #c68c00, #ffcc00);
-        background-size: 400% 400%; 
-        animation: holographic-gold 5s ease infinite; 
+    100% {
+        background-position: 0% 0%;
+    }
+}
 
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2),  
-                    inset 0 0 20px rgba(255, 255, 255, 0.3),  
-                    inset 0 0 30px rgba(0, 0, 0, 0.4); 
-        
-        border: 4px solid rgba(255, 255, 255, 0.6); 
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        bottom: -2.7em;
-        right: -2.7em;
-        scale: 0.37;
-      }
-    
-      
-      @keyframes holographic-gold {
-        0% { background-position: 0% 0%; }
-        50% { background-position: 100% 100%; }
-        100% { background-position: 0% 0%; }
-      }
+.coin-value {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Arial', sans-serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
 
-    .coin-value {
-        font-size: 40px;
-        font-weight: bold;
-        color: rgba(255, 255, 255, 0.9);  
-        font-family: 'Arial', sans-serif; 
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-        text-align: center;
-      }
-
-      .coin::after {
-        content: '';
-        position: absolute;
-        top: -10px;
-        left: -10px;
-        right: -10px;
-        bottom: -10px;
-        border-radius: 50%;
-        border: 4px solid rgba(255, 196, 0, 0.527); 
-        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-      }
+.coin::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 196, 0, 0.527);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}

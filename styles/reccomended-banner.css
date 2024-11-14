@@ -67,7 +67,7 @@
 }
 
 .header h2 {
-    color: rgb(70, 54, 1);
+    color: rgb(77, 61, 8);
     background-image: url('https://img.freepik.com/free-photo/abstract-solid-shining-yellow-gradient-studio-wall-room-background_1258-82661.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1729296000&semt=ais_hybrid');
     position: absolute;
    max-width: 800px;
@@ -92,7 +92,6 @@
 .scrolling-container {
     width: 100%;
     overflow: hidden;
-    /* Hide scrollbar */
     position: relative;
 }
 
@@ -110,17 +109,14 @@
 
 .reccomended div img {
     width: 300px;
-    /* Set a fixed width */
     aspect-ratio: 1/1.5;
-    /* Maintain aspect ratio */
-    /* Keep it a square */
     margin-bottom: 0.5em;
-    /* Space between image and button */
+  
 }
 
 .reccomended {
     padding: 1em;
-    background-image: url('https://media.istockphoto.com/id/1410726013/vector/abstract-black-stage-scene-with-spotlight-and-lighting-effect-background-you-can-use-for.jpg?s=612x612&w=0&k=20&c=yzOUujWxo5lZo38ms-B5pEV6e9OL35VtFPFWKK-tNz4=');
+    background-image: url('https://bellamediamanagement.com/wp-content/uploads/2024/05/2b.jpg');
     background-color: white;
 }
 
@@ -136,12 +132,10 @@
 @keyframes scroll-left {
     0% {
         transform: translateX(20%);
-        /* Start position */
     }
 
     100% {
-        transform: translateX(-50%);
-        /* End position based on total width */
+        transform: translateX(-20%);
     }
 }
 
