@@ -31,26 +31,29 @@ body {
 }
 
 .add-section {
-    display: flex;
-    flex-direction: row;
     margin: 0.5em;
-    position: relative; 
+    position: relative;
+    padding: 2.5em;
 }
 
-.add-section::after {
+.add-section h2, .add-section p {
+    padding-left: 20px;
+}
+
+.add-section::before {
     content: "HUGE DISCOUNTS";
-    padding: 0.5em 1em; 
+    padding: 0.5em 1em;
     max-width: 200px;
     background-color: #d32e2e;
-    color: rgb(255, 203, 60); 
-    font-weight: bold; 
-    font-size: 1em; 
-    border-radius: 1px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: rgb(255, 203, 60);
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: absolute;
-    left: 1; 
-    z-index: 1; 
-    animation: discount-shuffle 2s infinite alternate ;
+    top: 1em;
+    z-index: 1;
+    animation: discount-shuffle 2s infinite alternate;
 }
 
 @keyframes discount-shuffle {
@@ -67,13 +70,15 @@ body {
 .wrapper {
     margin: 1em;
     background-color: #eee;
-    background-image: url('https://insights.bookbub.com/wp-content/uploads/2016/06/Stunning-design-examples-inspire-your-book-advertising.png');
-    flex: 1 1 30%;
+    background-image: url('https://i0.wp.com/insights.bookbub.com/wp-content/uploads/2022/07/Brilliant_BookBub_Ad_Designs_Promoting_Books_in_a_Series.png?fit=750%2C394&ssl=1');
+    flex: 1 1 50%;
     height: 300px;
     border: 5px solid rgb(192, 149, 6);
-    background-size: cover;
-    
+    background-position: center;
+}
 
+.wrapper-class h2 {
+   text-align: center;
 }
 
 .book-cover-img {
@@ -174,10 +179,7 @@ body {
     position: relative;
 }
 
-.buy-button:hover {
-    background-color: #bb007d;
-    transform: scale(2);
-}
+
 
 
 @media (max-width: 450px) {

@@ -1,13 +1,14 @@
 .nav-container-header {
     background-color: rgba(247, 163, 7, 0.959);
     overflow: hidden;
-    
+
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 
 }
 
@@ -23,9 +24,8 @@
     aspect-ratio: 1/1;
     display: flex;
     position: relative;
-    box-shadow: 2px 3px 4px  rgb(184, 184, 184);
+    box-shadow: 2px 3px 4px rgb(184, 184, 184);
 }
-
 
 
 
@@ -35,13 +35,13 @@
 }
 
 
-.brand  {
+.brand {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
-    
+
 }
 
 .brand h2 {
@@ -52,7 +52,7 @@
     scale: 1.5;
     margin-left: 1.6em;
     z-index: 10;
-    
+
 }
 
 
@@ -65,43 +65,66 @@
     aspect-ratio: 1/1;
     border-radius: 30% 30% 30% 1%;
     background-color: rgba(75, 49, 2, 0.986);
-   z-index: 1;
+    z-index: 1;
 }
 
 
+.search {
+    margin: 1em;
+}
+
+.questions-answers {
+    padding: 10px;
+    margin: 1em;
+    flex: 0 1 10%;
+    background-color: #CD7F32;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.search input[type=text] {
+    padding: 10px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+.questions-answers a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.questions-answers i {
+    color: #FFBF00;
+    position: relative;
+    transition: 0.5s ease-out;
+    opacity: 0;
+    right: 20px;
+}
+
+.questions-answers:hover {
+    scale: 1.1;
+}
+
+.questions-answers:hover i {
+    opacity: 1;
+    right: 2em;
+    transition: 0.5s ease-in-out;
+}
 
 @media (max-width: 750px) {
 
-   
-    .brand  {
+
+    .brand {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         position: relative;
-        
-    }
 
-    
-
-    ul li a {
-        display: block;
-        font-size: 0.8rem;
-        padding: 0.5em;
-        text-align: center;
-
-    }
-
-    ul li::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.3;
-
-        border-radius: 0%;
     }
 
     .container {
@@ -112,7 +135,7 @@
     .logo {
         max-width: 40px;
         /* Reduce logo size */
-       
+
         justify-content: flex-start;
         align-content: flex-start;
         /* Reduce margin around the logo */

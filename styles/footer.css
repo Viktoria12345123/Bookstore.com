@@ -3,6 +3,8 @@
     padding: 0.5em;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnQN9XKq77HKYqZMTxwbQ4iu3MRo0rbOwQELIFvgUU8qDavhC8SlY7zj-rV1p_1zJ87I&usqp=CAU");
     background-size: cover;
+    position: sticky;
+    bottom: 0;
 }
 
 .footer .contacts {

@@ -71,7 +71,7 @@
     background-image: url('https://img.freepik.com/free-photo/abstract-solid-shining-yellow-gradient-studio-wall-room-background_1258-82661.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1729296000&semt=ais_hybrid');
     position: absolute;
    max-width: 800px;
-    top:4rem;
+    top:4.5rem;
     left: 4rem;
     text-align: center;
     font-size: 3em;
@@ -159,7 +159,7 @@
 
 @media (max-width: 750px) {
     .reccomended div img {
-        width: 120px;
+        width: 200px;
     }
 
     .reccomended div {
@@ -173,11 +173,15 @@
     .header h2 {
 
        max-width: 800px;
-        top: 15.5rem;
+        top: 10rem;
         left: 1.5rem;
         font-size: 2rem;
-       
-        
+    }
+
+    .search {
+        scale: 0.8;
+        position: absolute;
+        left: -3em;
     }
 
 
