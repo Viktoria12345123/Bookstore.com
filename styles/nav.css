@@ -5,6 +5,12 @@ body {
     background-color: #ffffff;
 }
 
+
+html {
+    font: 13px/1.5 Lato, Verdana, sans-serif;
+}
+
+
 .nav-container {
     position: fixed;
     bottom: -2em;

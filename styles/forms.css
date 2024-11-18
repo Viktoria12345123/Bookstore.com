@@ -1,19 +1,11 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-html {
-    font: 13px/1.5 Lato, Verdana, sans-serif;
-}
 
 
 body, input, form, select, button, textarea {
     font: inherit;
 }
 
-body {
+.form-divider {
     background-image: url('https://wallpaper.forfun.com/fetch/f4/f4b6dd382b9815ed340d123be37c7cdd.jpeg');
     background-size: cover;
     background-position: center;
@@ -24,6 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     filter: contrast(190%);
+    
 }
 
 
