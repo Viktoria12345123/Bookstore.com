@@ -69,25 +69,30 @@
 .search::after {
     content: "\f004";
     position:absolute;
-    top:5.8rem;
-    right: calc(29vw + 1px);
+    top:7rem;
+    right: calc(29.9vw + 1px);
     transform: translateY(10%);
     font-weight: 900;
     scale: 1;
     color: #b41313;
     opacity: 0;
-    transition: 1s ease-in-out;
+    transition: 1s ease-in;
     font-family: "Font Awesome 5 Free";
 }
 
-.search:hover:before {
+.search:hover::before {
     transform: translateX(-120%);
-    animation: flicker 4s linear infinite;
+    animation: flicker 4s linear infinite, track 4s linear infinite;
 }
-
 .search:hover::after {
     transform: translateX(-120%);
-    animation: find 4s linear infinite;
+    animation: find 4s linear infinite, track 4s linear infinite;
+}
+
+.search input {
+    background-color: #ccc;
+    width: calc(20px + 40vw);
+
 }
 
 @keyframes find {
@@ -109,8 +114,31 @@
     95% {
         opacity: 1;
     }
-    97% {
-        opacity: 0;
+    
+}
+
+@keyframes track {
+
+    40% {
+    
+        transform: translateY(-90%);
+    }
+
+    60% {
+        transform: translateY(-70%);
+        transform: translateX(110%);
+    }
+
+    70% {
+        transform: translateY(-100%);
+    }
+
+    80% {
+        transform: translateY(-100%);
+    }
+
+    90% {
+        transform: translateY(-100%);
     }
 }
 
@@ -121,7 +149,6 @@
 
     40% {
         opacity: 0.8;
-        transform: translateY(-90%);
     }
 
     50% {
@@ -130,13 +157,10 @@
 
     60% {
         opacity: 0.8;
-        transform: translateY(-70%);
-        transform: translateX(110%);
     }
 
     70% {
         opacity: 0.7;
-        transform: translateY(-100%);
     }
 
     75% {
@@ -146,20 +170,7 @@
 
     80% {
         scale: 3;
-        transform: translateY(-100%);
     }
-
-    90% {
-    
-        transform: translateY(-100%);
-
-    }
-}
-
-.search input {
-    background-color: #ccc;
-    width: calc(20px + 40vw);
-
 }
 
 @media (max-width: 750px) {
@@ -172,6 +183,7 @@
     .search {
         top: 2.5%;
         left: 3%;
+        z-index: 300;
     }
 
     .search:hover:before, .search:hover::after {

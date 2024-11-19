@@ -47,12 +47,12 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
-    color: rgb(255, 255, 255);
+    color: rgb(253, 253, 253);
 }
 
 
 input:-webkit-autofill {
-    -webkit-text-fill-color: #f8f5f5 !important; /* Set text color to black or your desired color */
+    -webkit-text-fill-color: #f8f5f5 ;
 }
 
 .form .field {
@@ -136,7 +136,7 @@ filter: opacity(0.7);
 }
 
 .form .field input:not(:placeholder-shown) ~ i {
-    display: block;
+   display: block;
 }
 
 .form .field input:focus {

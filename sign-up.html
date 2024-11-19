@@ -52,7 +52,7 @@
             <div class="navigation">
                 <ul class="nav-ul-element">
                     <li class="active">
-                        <a href="#">
+                        <a href="/">
                             <span class="icon">
                                 <i class="fa-solid fa-house"></i>
                             </span>
@@ -84,7 +84,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/sign">
                             <span class="icon">
                                 <i class="fa-solid fa-user"></i>
                             </span>
@@ -103,11 +103,11 @@
     <div class="form-divider">
     <form autocomplete="off" action="#" class="form">
         <header>
-            <h1>Login</h1>
+            <h1>Register</h1>
         </header>
 
         <div class="field">
-            <input type="email" name="email" id="login-email" placeholder="Email" required>
+            <input type="email" name="email" id="signup-email" placeholder="Email" required>
             <i class="fa-solid fa-circle-check"></i><label for="login-email">Email:</label>
             <span class="helper info">example: JohnDoe344@gmail.com</span>
         </div>
@@ -118,7 +118,13 @@
             <span class="helper info">Password must be at least 8 characters long</span>
         </div>
 
-        <p class="link-signup">No account?<a href="#Sign-up">sign up</a></p>
+        <div class="field">
+            <input type="password" name="re-pass" id="login-password" placeholder="repeat-pass" required>
+            <i class="fa-solid fa-circle-check"></i><label for="login-password">Repeat password:</label>
+            <span class="helper info">Password must be at least 8 characters long</span>
+        </div>
+
+        <p class="link-signup">Already have an account??<a href="#Login">Login</a></p>
     
 
         <input type="submit" value="Submit">

@@ -107,6 +107,6 @@ li.active~.indicator {
 
 
 li:nth-child(2).active~.indicator {--x: 70px}
-li:nth-child(3).active~.indicator {--x: 140px}
+li:nth-child(3).active~.indicator {--x: 1400px}
 li:nth-child(4).active~.indicator {--x: 210px}
 li:nth-child(5).active~.indicator {--x: 280px}
